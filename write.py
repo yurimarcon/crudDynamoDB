@@ -14,8 +14,8 @@ def put_movie(id, name, dynamodb=None):
             'dynamodb',
             endpoint_url="http://dynamodb.us-east-2.amazonaws.com",
             region_name='us-east-2',
-            aws_access_key_id = 'AKIARLUNCMQLPBP6D4OR',
-            aws_secret_access_key = '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'
+            aws_access_key_id = 'AKIARLUNCMQLPBP6D4OR-X',
+            aws_secret_access_key = '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-X'
         )
 
     table = dynamodb.Table('hl7')
@@ -30,6 +30,6 @@ def put_movie(id, name, dynamodb=None):
     return response
 
 if __name__ == '__main__':
-    movie_resp = put_movie(str(time.time()*1000.0), 'Madalena', 0)
+    movie_resp = put_movie(str(time.time()*1000.0), 'Gamora', 0)
     print("Put movie succeeded:")
     pprint(movie_resp, sort_dicts=False)
