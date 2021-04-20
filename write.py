@@ -14,8 +14,8 @@ def put_movie(id, name, dynamodb=None):
             'dynamodb',
             endpoint_url="http://dynamodb.us-east-2.amazonaws.com",
             region_name='us-east-2',
-            aws_access_key_id = 'AKIARLUNCMQLPBP6D4OR-X',
-            aws_secret_access_key = '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-X'
+            aws_access_key_id = 'XXXXXXXXXXXXXXXXXXXXXXXX',
+            aws_secret_access_key = 'XXXXXXXXXXXXXXXXXXXXXXXXX'
         )
 
     table = dynamodb.Table('hl7')
